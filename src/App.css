@@ -24,23 +24,29 @@ body {
   overflow-x: hidden;
 }
 
-/* Mobile Background Fix */
-@media (max-width: 768px) {
-  .App {
-    background-attachment: scroll !important;
-    background-position: center top !important;
-    background-size: cover !important;
-    min-height: 100vh;
-  }
+/* Background Image - Desktop */
+.app-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 0;
 }
 
-@media (max-width: 480px) {
-  .App {
-    background-attachment: scroll !important;
-    background-position: center top !important;
-    background-size: cover !important;
-    min-height: 100vh;
-  }
+/* Dark overlay for better text readability */
+.app-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -49,6 +55,33 @@ body {
   padding: 0 20px;
   position: relative;
   z-index: 1;
+}
+
+/* Mobile Background Fix - Same as Desktop */
+@media (max-width: 768px) {
+  .app-background {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  .app-background::after {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media (max-width: 480px) {
+  .app-background {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  .app-background::after {
+    background: rgba(0, 0, 0, 0.65);
+  }
 }
 
 /* Scrollbar Styling */

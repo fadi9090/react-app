@@ -5,14 +5,10 @@ import Footer from './components/footer/footer';
 
 function App() {
   return (
-    <div className="App" style={{
-      backgroundImage: `url(${process.env.PUBLIC_URL}/images/background.png)`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed',
-      backgroundRepeat: 'no-repeat',
-      minHeight: '100vh'
-    }}>
+    <div className="App">
+      <div className="app-background" style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL}/images/background.png)`
+      }}></div>
       <div className="container">
         <Header />
         <Main />
