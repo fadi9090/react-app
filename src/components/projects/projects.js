@@ -6,7 +6,7 @@ const STATIC_PROJECTS = [
     id: 1,
     title: 'Portfolio Website',
     description: 'A modern, responsive portfolio website built with React. Features include dark mode, smooth animations, contact form integration, and dynamic skill/project sections.',
-    image_url: '/images/background.png',
+    image_url: '../images/background.png',
     link: 'https://your-portfolio.com',
     github_link: 'https://github.com/yourusername/portfolio',
     skills: [
