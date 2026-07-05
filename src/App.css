@@ -24,19 +24,31 @@ body {
   overflow-x: hidden;
 }
 
+/* Mobile Background Fix */
+@media (max-width: 768px) {
+  .App {
+    background-attachment: scroll !important;
+    background-position: center top !important;
+    background-size: cover !important;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    background-attachment: scroll !important;
+    background-position: center top !important;
+    background-size: cover !important;
+    min-height: 100vh;
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
   z-index: 1;
-}
-
-/* Mobile Background Fix - Add these as inline styles in App.js instead */
-@media (max-width: 768px) {
-  .App {
-    background-attachment: scroll !important;
-  }
 }
 
 /* Scrollbar Styling */
