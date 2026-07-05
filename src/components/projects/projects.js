@@ -6,8 +6,7 @@ const STATIC_PROJECTS = [
     id: 1,
     title: 'Portfolio Website',
     description: 'A modern, responsive portfolio website built with React. Features include dark mode, smooth animations, contact form integration, and dynamic skill/project sections.',
-    image_url: '../images/background.png',
-    link: 'https://your-portfolio.com',
+    image_url: '/images/background.png',
     github_link: 'https://github.com/yourusername/portfolio',
     skills: [
       { id: 1, name: 'React', icon: '⚛️' },
@@ -21,7 +20,6 @@ const STATIC_PROJECTS = [
     title: 'Shopify Store',
     description: 'A fully functional e-commerce store built on Shopify platform. Features include product management, payment gateway integration, custom theme development, and SEO optimization.',
     image_url: '/images/shopify.webp',
-    link: 'https://your-shopify-store.com',
     github_link: 'https://github.com/yourusername/shopify-store',
     skills: [
       { id: 5, name: 'Shopify', icon: '🛍️' },
@@ -35,7 +33,6 @@ const STATIC_PROJECTS = [
     title: 'Go Banking System',
     description: 'A scalable online banking system built with Go using Gin framework. Features microservices architecture, Docker containerization, RESTful APIs, and PostgreSQL database for secure financial transactions.',
     image_url: '/images/go.png',
-    link: 'https://your-banking-system.com',
     github_link: 'https://github.com/yourusername/go-banking',
     skills: [
       { id: 9, name: 'Go', icon: '🐹' },
@@ -51,7 +48,6 @@ const STATIC_PROJECTS = [
     title: 'Marketplace with Shopping Cart',
     description: 'A full-featured online marketplace with shopping cart functionality built with Node.js and Express. Features include user authentication, product listings, real-time cart updates, order management, and SQLite database for lightweight data storage.',
     image_url: '/images/nodejs.png',
-    link: 'https://your-marketplace.com',
     github_link: 'https://github.com/yourusername/node-marketplace',
     skills: [
       { id: 15, name: 'Node.js', icon: '🟢' },
